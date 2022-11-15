@@ -38,6 +38,7 @@ public class UserDao {
     }
 
     public User read(Object idOrMail){
+        //query zmienic a nie sprawdzac instanceof object
         String query ="";
         if(idOrMail instanceof Integer){
             query = READ_USER_QUERY_BY_ID;
